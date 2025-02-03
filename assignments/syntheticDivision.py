@@ -1,6 +1,6 @@
 import numpy as np
 import time
-
+from numpy.polynomial import Polynomial
 
 def obvEx(x, deg):
     timeList = []
@@ -18,9 +18,26 @@ def obvEx(x, deg):
     return(a, np.mean(timeList))
 
 
-print("Evaluation Method: Obvious Evaluation")
+def synDiv(div, deg):
+    b = Polynomial(for i in range (1, deg+1, 1))
+    return(b)
+
 print("------------------------------------------------------------")
+print()
+print("Evaluation Method: Obvious Evaluation")
+print()
+print("------------------------------------------------------------")
+print()
 for j in range(10, 21):
     print("Degree " + str(j) + ": " + str(obvEx(6, j)[0]) + "     Time: " + str(obvEx(6, j)[1]) + "ns")
+print()
 print("------------------------------------------------------------")
-print
+print()
+print("Evaluation Method: Synthetic Division")
+print()
+print("------------------------------------------------------------")
+print()
+for j in range(10, 21):
+    print("Degree ")
+
+print(synDiv(6, 5))
