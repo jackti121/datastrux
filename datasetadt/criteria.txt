@@ -1,0 +1,33 @@
+======================================================================================================
+
+In class we began to build a SET abstract data type. 
+It contained data and the methods needed to manipulate the data.  
+
+
+Add the following functionality:
+
+    UNION
+
+    INTERSECTION
+
+    SUBTRACTION
+
+    ADD an element to the set
+
+    DELETE an element from the set
+
+    ELEMENT_OF determine if an item is a member of a set.
+
+    IS_SUBSET
+
+    EMPTY SET
+
+    COMPLEMENT
+
+
+
+Upload your well documented code here. Include  a README and any other supporting documentation.
+Not sure what these things are? Do a little research on SET theory.  
+Be sure to include what you found in your citations!
+
+======================================================================================================
