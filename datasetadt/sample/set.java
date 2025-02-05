@@ -1,4 +1,4 @@
-package datasetadt;
+package datasetadt.sample;
 
 public class set {
     public static final int SETSIZE = 10000;

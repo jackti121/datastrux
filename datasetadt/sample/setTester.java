@@ -1,4 +1,4 @@
-package datasetadt;
+package datasetadt.sample;
 
 public class setTester {
     public static void main(String[] args) {
