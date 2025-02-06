@@ -7,6 +7,14 @@ public class setclass {
         mySet = new String[stdsize];
         size = 0;
     }
+    public boolean contains(String elem) {
+        for (int i = 0; i < size; i++) {
+            if (mySet[i].equals(elem)) {
+                return true;
+            }
+        }
+        return false;
+    }
     public int returnSize() {
         return size;
     }
@@ -32,15 +40,38 @@ public class setclass {
         retval = retval + ")";
         return retval;
     }
+    public static setclass union(setclass a, setclass b) {
+        setclass retval = new setclass();
+        for (int i = 0; i < a.size; i++) {
+            retval.add(a.mySet[i]);
+        }
+        for (int i = 0; i < b.size; i++) {
+            if (!retval.contains(b.mySet[i])) {
+                retval.add(b.mySet[i]);
+            }
+        }
+        return retval;
+    }
     public static void main(String[] args) {
         setclass a = new setclass();
+        setclass b = new setclass();
         a.add("hi");
         a.add("hey");
         a.add("hello");
         a.add("hallo");
+        for (int i = 0; i < 10; i++) {
+            a.add(Integer.toString(i));
+        }
+        for (int i = 4; i < 13; i++) {
+            b.add(Integer.toString(i));
+        }
+        b.add("hello");
+        b.add("hallo");
+        b.add("hola");
+        System.out.println(b);
         System.out.println(a.returnSize());
         System.out.println(a);
-        a.remove("hello");
+        System.out.println(union(a, b));
         System.out.println(a.returnSize());
         System.out.println(a);
     }
