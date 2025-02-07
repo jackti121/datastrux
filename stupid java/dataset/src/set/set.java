@@ -30,37 +30,23 @@ public class set {
 
     
     /** 
-     * Returns if
+     * inputs a given set as an instance variable, then checks if String elem is in the given set.
      * @param elem
      * @return boolean
      */
-    public boolean element_of(set a) {
-        String elem = this.toString();
+    public boolean element_of(String elem) {
         for (int i = 0; i < size; i++) {
-            if (a.mySet[i].equals(elem)) {
+            if (mySet[i].equals(elem)) {
                 return true;
             }
         }
         return false;
     }
     
-    
-    
-    /** 
-     * @param elem
-     * @return String
-     */
-    public String get(String elem) {
-        for (int i = 0; i < size; i++) {
-            if (mySet[i].equals(elem)) {
-                return mySet[i];
-            }
-        }
-        return null;
-    }
 
     
     /** 
+     * returns the size of the given set.
      * @return int
      */
     public int cardinality() {
@@ -69,6 +55,7 @@ public class set {
 
     
     /** 
+     * adds String elem to the end of the set.
      * @param elem
      */
     public void add(String elem) {
@@ -78,6 +65,7 @@ public class set {
 
     
     /** 
+     * adds String elem to the set at the given index.
      * @param elem
      * @param index
      */
@@ -91,6 +79,7 @@ public class set {
 
     
     /** 
+     * checks if the given set has any values or if it is empty.
      * @return boolean
      */
     public boolean isEmptySet() {
@@ -104,6 +93,7 @@ public class set {
 
     
     /** 
+     * removes the first instance of String elem from the given set.
      * @param elem
      */
     public void delete(String elem) {
@@ -120,6 +110,7 @@ public class set {
 
     
     /** 
+     * removes the instance at int index from the given set.
      * @param index
      */
     public void delete(int index) {
@@ -132,6 +123,7 @@ public class set {
 
     
     /** 
+     * converts the given set into a string. returns all values of the set.
      * @return String
      */
     public String toString() {
