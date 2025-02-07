@@ -6,24 +6,31 @@ It contained data and the methods needed to manipulate the data.
 
 Add the following functionality:
 
-    UNION
+    done UNION - return a union of sets A and B. 
+        a union is the set of elements that are in either A or B, or both
 
-    INTERSECTION
+    INTERSECTION - returns an intersection of sets A and B.
+        an intersection is the set of elements that are in both set A and set B
 
-    SUBTRACTION
+    done SUBTRACTION - returns the difference of set A and B.
+        the subtraction/difference of sets A and B is the set of elements that are in A but not in B
 
-    ADD an element to the set
 
-    DELETE an element from the set
+    done ADD an element to the set
 
-    ELEMENT_OF determine if an item is a member of a set.
+    done DELETE an element from the set
 
-    IS_SUBSET
+    done ELEMENT_OF determine if an item is a member of a set.
 
-    EMPTY SET
+    done IS_SUBSET
 
-    COMPLEMENT
+    done EMPTY SET
 
+    done COMPLEMENT - returns the compliment of set A vs the universal set of U
+        example: 
+        universal set = {t, e, x, a, s}
+        set A = {e, a}
+        compliment of A = {t, x, s}
 
 
 Upload your well documented code here. Include  a README and any other supporting documentation.
