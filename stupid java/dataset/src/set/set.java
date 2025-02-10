@@ -31,7 +31,8 @@ public class set {
     
     /** 
      * inputs a given set as an instance variable, then checks if String elem is in the given set.
-     * @param elem
+     * example: {@code }
+     * @param elem the element you're looking for
      * @return boolean
      */
     public boolean element_of(String elem) {
@@ -56,7 +57,7 @@ public class set {
     
     /** 
      * adds String elem to the end of the set.
-     * @param elem
+     * @param elem the element you want to add
      */
     public void add(String elem) {
         mySet[size] = elem;
@@ -66,8 +67,8 @@ public class set {
     
     /** 
      * adds String elem to the set at the given index.
-     * @param elem
-     * @param index
+     * @param elem the element you want to add
+     * @param index where you want to add the element
      */
     public void add(String elem, int index) {
         size += 1;
@@ -94,7 +95,7 @@ public class set {
     
     /** 
      * removes the first instance of String elem from the given set.
-     * @param elem
+     * @param elem the element you want to delete
      */
     public void delete(String elem) {
         for (int i = 0; i < size; i++) {
@@ -111,7 +112,7 @@ public class set {
     
     /** 
      * removes the instance at int index from the given set.
-     * @param index
+     * @param index the location of the element you want to delete
      */
     public void delete(int index) {
         mySet[index] = mySet[index+1];
@@ -140,8 +141,9 @@ public class set {
 
     
     /** 
-     * @param a
-     * @param b
+     * returns a set of elements that are in either set A, set B, or both.
+     * @param a the first set
+     * @param b the second set
      * @return set
      */
     public static set union(set a, set b) {
@@ -159,6 +161,7 @@ public class set {
 
     
     /** 
+     * returns a set of elements that are in the instance set (set A), but not set B.
      * @param b
      * @return set
      */
@@ -174,6 +177,7 @@ public class set {
 
     
     /** 
+     * returns the {@link #subtraction(set b)} of the instance set (set A) and a given universal set.
      * @return set
      */
     public set complement() {
@@ -183,7 +187,8 @@ public class set {
 
     
     /** 
-     * @param b
+     * returns if the instance set (set A) contains at least all elements in set B.
+     * @param b the smaller set
      * @return boolean
      */
     public boolean is_subset(set b) {
@@ -197,8 +202,9 @@ public class set {
 
     
     /** 
-     * @param a
-     * @param b
+     * returns the set of elements that are in both set A and in set B.
+     * @param a the first set
+     * @param b the second set
      * @return set
      */
     public static set intersection(set a, set b) {
@@ -211,12 +217,5 @@ public class set {
             }
         }
         return retval;
-    }
-    
-    /** 
-     * @param args
-     */
-    public static void main(String[] args) {
-        System.out.println("hi");
     }
 }
