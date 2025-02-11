@@ -1,4 +1,3 @@
-package set;
 public class set {
 
     //Variable Declaration//
@@ -30,7 +29,6 @@ public class set {
     
     /** 
      * inputs a given set as an instance variable, then checks if String elem is in the given set.
-     * example: {@code }
      * @param elem the element you're looking for
      * @return boolean
      */

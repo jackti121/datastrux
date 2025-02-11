@@ -1,6 +1,4 @@
-import set.*;
-
-public class SETTester {
+public class settester {
     public static void main(String[] args) {
         set setthingy = new set();
         // setthingy.add("George");
