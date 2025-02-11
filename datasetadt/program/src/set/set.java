@@ -1,4 +1,4 @@
-//hi
+package set;
 public class set {
 
     //Variable Declaration//
@@ -128,6 +128,9 @@ public class set {
      */
     public String toString() {
         String retval = "( ";
+        if (size == 0) {
+            retval = retval + ")";
+        }
         for (int i = 0; i < size; i++) {
             if (i == size - 1) {
                 retval = retval + mySet[i] + " )";
