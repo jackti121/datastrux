@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-this is just a collection of all my assignments for data structures and algorithms
-=======
 ## Documentation
 
 A collection of documentation for this assignment can be found [here](https://jackti121.github.io/datastrux/).
@@ -54,4 +51,3 @@ Add the following functionality:
             - compliment of A = {t, x, s}
 
 ======================================================================================================
->>>>>>> fcfe232 (patch)
